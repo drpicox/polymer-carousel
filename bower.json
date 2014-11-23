@@ -1,0 +1,20 @@
+{
+  "name": "Polymer-Gulp-Carousel",
+  "version": "1.0.0",
+  "authors": [
+    "David Rodenas <david.rodenas@gmail.com>"
+  ],
+  "description": "A test of Polymer and Gulp technologies by creating a Carousel",
+  "main": "www/index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.1"
+  }
+}

@@ -1,0 +1,19 @@
+<!--
+
+	Carousel index.
+	It shows bullets for each available slides, marks the active one,
+	and let to change by clicking a bullet.
+
+    <carousel-index></carousel-index>
+-->
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="carousel-index" attributes="src">
+  <template>
+  	<link rel="stylesheet" href="carousel-index.css">
+  	<template repeat="{{ slide,slideIdx in slides }}">
+  		<span on-mousedown="{{selectSlideIdx}}" data-slideIdx="{{slideIdx}}" class="button {{slide.active && 'active'}}">O</span>
+  	</template>
+  </template>
+  <script src="carousel-index.js"></script>
+</polymer-element>

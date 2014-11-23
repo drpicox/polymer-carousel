@@ -1,0 +1,33 @@
+:host {
+	display: block;
+	position: absolute;
+	bottom: 10px;
+	left: 49%;
+	width: 2%;
+	text-align: center;
+	overflow: visible;
+	white-space: nowrap;
+
+	.button {
+		display: inline-block;
+
+		border-radius: 1000px;
+		border: solid 2px white;
+
+		width: 0.3em;
+		height: 0.3em;
+		margin: 0 0.15em;
+
+		text-indent: 400%;
+		overflow: hidden;
+
+		&:hover {
+			background: rgba(255,255,255,0.2);
+			box-shadow: 0px 0px 5px #fff;
+		}
+		&.active {
+			background: white;
+			background: rgba(255,255,255,0.8);
+		}
+	}
+}

@@ -1,0 +1,29 @@
+<!--
+
+	Polymer element of the carousel container.
+	It contains all other elements that configures the visualization/behaviour.
+  Optionally an aspect ratio attribute can be reported.
+
+    <carousel-container aspect="4:3">
+    	...
+    </carousel-container>
+
+    It exposes:
+      .slides: [slide]
+      .addSlide(slide)
+      .nextSlide(slide)     # slide is optional
+      .prevSlide()
+      .removeSlide(slide)
+
+    Slide is implemented by carousel-image.
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="carousel-container" attributes="aspect">
+  <template>
+  	<link rel="stylesheet" href="carousel-container.css">
+	<content></content>
+  </template>
+  <script src="carousel-container.js"></script>
+</polymer-element>
