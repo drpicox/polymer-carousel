@@ -42,6 +42,7 @@ $ gulp serve-dist
 ```
 
 
+
 How to use the component
 ------------------------
 
@@ -60,4 +61,19 @@ Example of use:
       <carousel-index></carousel-index>
       <carousel-timer delay="5"></carousel-timer>
     </carousel-container>
-```html
+```
+
+
+
+How to deploy in github
+-----------------------
+
+```bash
+$ cd www
+$ git init
+$ git checkout -b gh-pages
+$ git add -f $(find .)
+$ git commit -m initial commit
+$ git remote add github https://github.com/you/your-repo.git
+$ git push -u github gh-pages
+```
