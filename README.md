@@ -65,10 +65,11 @@ Example of use:
 
 
 
-How to deploy in github
------------------------
+How to publish at github
+------------------------
 
 ```bash
+$ gulp build
 $ cd www
 $ git init
 $ git checkout -b gh-pages
@@ -77,3 +78,4 @@ $ git commit -m initial commit
 $ git remote add github https://github.com/you/your-repo.git
 $ git push -u github gh-pages
 ```
+
